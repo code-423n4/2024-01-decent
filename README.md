@@ -44,12 +44,20 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 ---
 
 # Decent audit details
-- Total Prize Pool: XXX XXX USDC (Notion: Total award pool)
+- Total Prize Pool: $36,500 USDC 
+  - HM awards: $24,750 USDC 
+  - Analysis awards: $1,500 USDC 
+  - QA awards: $750 USDC 
+  - Bot Race awards: $2,250 USDC 
+  - Gas awards: $750 USDC 
+  - Judge awards: $3,600 USDC 
+  - Lookout awards: $2,400 USDC 
+  - Scout awards: $500 USDC 
 - Join [C4 Discord](https://discord.gg/code4rena) to register
 - Submit findings [using the C4 form](https://code4rena.com/contests/2024-01-decent/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 - Starts January 19th, 2024 20:00 UTC 
-- Ends TBD XXX XXX XX 20:00 UTC 
+- Ends January 22, 2024 20:00 UTC 
 
 ## Automated Findings / Publicly Known Issues
 
