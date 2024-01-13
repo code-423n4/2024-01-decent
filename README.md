@@ -123,9 +123,9 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 - How many separate interfaces and struct definitions are there for the contracts within scope?:  
 - Does most of your code generally use composition or inheritance?:   
 - How many external calls?:   
-- What is the overall line coverage percentage provided by your tests?:
+- What is the overall line coverage percentage provided by your tests?: 75
 - Is this an upgrade of an existing system?:
-- Check all that apply (e.g. timelock, NFT, AMM, ERC20, rollups, etc.): 
+- Check all that apply (e.g. timelock, NFT, AMM, ERC20, rollups, etc.): Multi-Chain, Uses L2
 - Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:   
 - Please describe required context:   
 - Does it use an oracle?:  
@@ -143,4 +143,4 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 
 ## Miscellaneous
 
-Employees of [SPONSOR NAME] and employees' family members are ineligible to participate in this audit.
+Employees of Decent.xyz and employees' family members are ineligible to participate in this audit.
