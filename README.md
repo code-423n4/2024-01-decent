@@ -65,19 +65,19 @@ The `DecentBridge` is built on top of layer zero's OFT contract, and additional 
 
 # Scope
 
-| Contract                                                                                           | SLOC | Purpose                                         | Libraries used |
-| -------------------------------------------------------------------------------------------------- | ---- | ----------------------------------------------- | -------------- |
-| [src/UTB.sol](./src/UTB.sol)                                                                       | 232  | Calls `swapAndExeucte` and `bridgeAndExecute`   |                |
-| [src/UTBExecutor.sol](./src/UTBExecutor.sol)                                                       | 52   | Calls the executor for esxternal contract calls |                |
-| [src/UTBFeeCollector.sol](./src/UTBFeeCollector.sol)                                               | 50   | Collects fees on UTB contract calls             |
-| [src/bridge_adapters/BaseAdapter.sol](./src/bridge_adapters/BaseAdapter.sol)                       | 16   | Standard functionality for each bridge adapter  |
-| [src/bridge_adapters/DecentBridgeAdapter.sol](./src/bridge_adapters/DecentBridgeAdapter.sol)       | 137  | adapter impl for decent bridge                  |
-| [src/bridge_adapters/StargateBridgeAdapter.sol](./src/bridge_adapters/StargateBridgeAdapter.sol)   | 190  | adapter impl for stargate bridge                |
-| [src/swappers/SwapParams.sol](./src/swappers/SwapParams.sol)                                       | 13   | params for swapper files                        |
-| [src/swappers/UniSwapper.sol](./src/swappers/UniSwapper.sol)                                       | 145  | implementation of ISwapper for UniV3            |
-| [lib/decent-bridge/src/DcntEth.sol](./lib/decent-bridge/src/DcntEth.sol)                           | 27   | OFTV2 implementation for DcntEth                | `OFTV2`        |
-| [lib/decent-bridge/src/DecentEthRouter.sol](./lib/decent-bridge/src/DecentEthRouter.sol)           | 290  | Core bridge logic                               |                |
-| [lib/decent-bridge/src/DecentBridgeExecutor.sol](./lib/decent-bridge/src/DecentBridgeExecutor.sol) | 57   | makes external contract calls                   |                |
+| Contract                                                                                                                                      | SLOC | Purpose                                         | Libraries used |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ----------------------------------------------- | -------------- |
+| [src/UTB.sol](https://github.com/code-423n4/2024-01-decent/src/UTB.sol)                                                                       | 232  | Calls `swapAndExeucte` and `bridgeAndExecute`   |                |
+| [src/UTBExecutor.sol](https://github.com/code-423n4/2024-01-decent/src/UTBExecutor.sol)                                                       | 52   | Calls the executor for esxternal contract calls |                |
+| [src/UTBFeeCollector.sol](https://github.com/code-423n4/2024-01-decent/src/UTBFeeCollector.sol)                                               | 50   | Collects fees on UTB contract calls             |
+| [src/bridge_adapters/BaseAdapter.sol](https://github.com/code-423n4/2024-01-decent/src/bridge_adapters/BaseAdapter.sol)                       | 16   | Standard functionality for each bridge adapter  |
+| [src/bridge_adapters/DecentBridgeAdapter.sol](https://github.com/code-423n4/2024-01-decent/src/bridge_adapters/DecentBridgeAdapter.sol)       | 137  | adapter impl for decent bridge                  |
+| [src/bridge_adapters/StargateBridgeAdapter.sol](https://github.com/code-423n4/2024-01-decent/src/bridge_adapters/StargateBridgeAdapter.sol)   | 190  | adapter impl for stargate bridge                |
+| [src/swappers/SwapParams.sol](https://github.com/code-423n4/2024-01-decent/src/swappers/SwapParams.sol)                                       | 13   | params for swapper files                        |
+| [src/swappers/UniSwapper.sol](https://github.com/code-423n4/2024-01-decent/src/swappers/UniSwapper.sol)                                       | 145  | implementation of ISwapper for UniV3            |
+| [lib/decent-bridge/src/DcntEth.sol](https://github.com/code-423n4/2024-01-decent/lib/decent-bridge/src/DcntEth.sol)                           | 27   | OFTV2 implementation for DcntEth                | `OFTV2`        |
+| [lib/decent-bridge/src/DecentEthRouter.sol](https://github.com/code-423n4/2024-01-decent/lib/decent-bridge/src/DecentEthRouter.sol)           | 290  | Core bridge logic                               |                |
+| [lib/decent-bridge/src/DecentBridgeExecutor.sol](https://github.com/code-423n4/2024-01-decent/lib/decent-bridge/src/DecentBridgeExecutor.sol) | 57   | makes external contract calls                   |                |
 
 ## Out of scope
 
