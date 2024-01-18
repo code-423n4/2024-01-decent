@@ -81,20 +81,20 @@ The `DecentBridge` is built on top of layer zero's OFT contract, and additional 
 
 ## Out of scope
 
-_List any files/contracts that are out of scope for this audit._
+- All libs besides `decent-bridge` are out of scope
 
 # Additional Context
 
-- Protocol is expected to interact with any erc20 with dex liquidity, as a potentially payment token for `swapAndExecute` or `bridgeAndExecute`
-- Protocol is theoretically expected to interact with any erc721s, such as through minting them in `swapAndExecute` or `bridgeAndExecute`
+- Protocol is expected to interact with any erc20 with dex liquidity, as it can be potential payment token for `swapAndExecute` or `bridgeAndExecute`
+- Protocol is theoretically expected to interact with any erc721, such as through minting them in `swapAndExecute` or `bridgeAndExecute`
 - Will be deployed to most blockchains, can consider scope of blockchains to those supported by layerzero for now (listed on website)
-- [ ] In the event of a DOS, could you outline a minimum duration after which you would consider a finding to be valid? This question is asked in the context of most systems' capacity to handle DoS attacks gracefully for a certain period.
-- [ ] Is any part of your implementation intended to conform to any EIP's? Yes:
-  - `DecentEth.sol`: Should comply with the `ERC-20` standard
+- `DecentEth.sol`: Should comply with the `ERC-20` standard
 
 ## Attack ideas (Where to look for bugs)
 
-_List specific areas to address - see [this blog post](https://medium.com/code4rena/the-security-council-elections-within-the-arbitrum-dao-a-comprehensive-guide-aa6d001aae60#9adb) for an example_
+- Arbitrary Calldata: The ability to send arbitrary calldata through the protocol is one area to focus on. Namely a user should not be able to interact with the protocol to perform a swap or transfer of funds on their behalf, unless they have sent or approved those funds for use.
+- Fund Accumulation: Other than the UTBFeeCollector, and DcntEth, the contracts are not intended to hold on to any funds or unnecessary approvals. Any native value or erc20 flowing through the protocol should either get delivered or refunded.
+- Destination Chain Failures: Transactions that revert on the destination chain can potentially place user’s funds at risk of being lost. Any edge cases should be properly handled such that the user is issued a refund on the destination chain.
 
 ## Main invariants
 
@@ -102,31 +102,24 @@ _Describe the project's main invariants (properties that should NEVER EVER be br
 
 ## Scoping Details
 
-[ ⭐️ SPONSORS: please confirm/edit the information below. ]
-
 ```
-- If you have a public code repo, please share it here:
-- How many contracts are in scope?:
-- Total SLoC for these contracts?:
+- If you have a public code repo, please share it here: github.com/decentxyz/UTB, github.com/decentxyz/decent-bridge note that the UTB branch is `develop`
+- How many contracts are in scope?: 11
+- Total SLoC for these contracts?: 1193
 - How many external imports are there?:
-- How many separate interfaces and struct definitions are there for the contracts within scope?:
-- Does most of your code generally use composition or inheritance?:
+- How many separate interfaces and struct definitions are there for the contracts within scope?: 11 interfaces
 - How many external calls?:
 - What is the overall line coverage percentage provided by your tests?: 75
-- Is this an upgrade of an existing system?:
-- Check all that apply (e.g. timelock, NFT, AMM, ERC20, rollups, etc.): Multi-Chain, Uses L2
-- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:
-- Please describe required context:
-- Does it use an oracle?:
-- Describe any novel or unique curve logic or mathematical models your code uses:
-- Is this either a fork of or an alternate implementation of another project?:
-- Does it use a side-chain?:
-- Describe any specific areas you would like addressed:
+- Check all that apply: ERC20, Multi-Chain, Uses L2
+- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?: knowledge of lz would be helpful
+- Is this either a fork of or an alternate implementation of another project?: no
+- Does it use a side-chain?: can be deployed to polygon
 ```
 
 # Tests
 
-_Provide every step required to build the project from a fresh git clone, as well as steps to run the tests with a gas report._
+To setup the repo, first run `forge install` + `pnpm i`
+To run the tests, simply add the relevant files to your `.env`, referencing `.env.example`, then run `forge test`.
 
 _Note: Many wardens run Slither as a first pass for testing. Please document any known errors with no workaround._
 
