@@ -1,0 +1,12 @@
+forge-std/=lib/forge-std/src/
+solmate/=lib/solmate/src/
+@uniswap/v3-periphery/=lib/v3-periphery/
+@uniswap/v3-core/=lib/v3-core/
+@uniswap/swap-contracts/=lib/swap-router-contracts/contracts/
+decent-bridge/=lib/decent-bridge/
+better-deployer/=lib/decent-bridge/lib/better-deployer/src/
+forge-toolkit/=lib/forge-toolkit/src/
+openzeppelin-contracts/=lib/decent-bridge/lib/openzeppelin-contracts/contracts
+
+
+
