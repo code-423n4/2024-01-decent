@@ -1,0 +1,60 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+solc = "0.8.20"
+
+fs_permissions = [
+    { access = "read", path = "./constants"},
+    { access = "read", path = "./out"},
+    { access = "read-write", path = "./deployments"},
+    { access = "read", path = "./actual-deployments"},
+]
+
+gas_reports = ["*"]
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+[rpc_endpoints]
+ethereum = "${ETHEREUM_RPC_URL}"
+sepolia = "${SEPOLIA_RPC_URL}"
+arbitrum = "${ARBITRUM_RPC_URL}"
+arbitrum_goerli = "${ARBITRUM_GOERLI_RPC_URL}"
+arbitrum_sepolia = "${ARBITRUM_SEPOLIA_RPC_URL}"
+optimism = "${OPTIMISM_RPC_URL}"
+optimism_goerli = "${OPTIMISM_GOERLI_RPC_URL}"
+optimism_sepolia = "${OPTIMISM_SEPOLIA_RPC_URL}"
+base = "${BASE_RPC_URL}"
+base_goerli = "${BASE_GOERLI_RPC_URL}"
+zora = "${ZORA_RPC_URL}"
+zora_goerli = "${ZORA_GOERLI_RPC_URL}"
+polygon = "${POLYGON_RPC_URL}"
+polygon_mumbai = "${POLYGON_MUMBAI_RPC_URL}"
+avalanche = "${AVALANCHE_RPC_URL}"
+avalanche_fuji = "${AVALANCHE_FUJI_RPC_URL}"
+fantom = "${FANTOM_RPC_URL}"
+fantom_testnet = "${FANTOM_TESTNET_RPC_URL}"
+moonbeam = "${MOONBEAM_RPC_URL}"
+moonbeam_testnet = "${MOONBEAM_TESTNET_RPC_URL}"
+rarible_testnet = "${RARIBLE_TESTNET_RPC_URL}"
+
+fork_ethereum = "http://localhost:${FORK_ETHEREUM_PORT}"
+fork_arbitrum = "http://localhost:${FORK_ARBITRUM_PORT}"
+fork_optimism = "http://localhost:${FORK_OPTIMISM_PORT}"
+fork_zora= "http://localhost:${FORK_ZORA_PORT}"
+fork_base= "http://localhost:${FORK_BASE_PORT}"
+fork_sepolia= "http://localhost:${FORK_SEPOLIA_PORT}"
+fork_zora-goerli= "http://localhost:${FORK_ZORA_GOERLI_PORT}"
+fork_avalanche= "http://localhost:${FORK_AVALANCHE_PORT}"
+fork_polygon= "http://localhost:${FORK_POLYGON_PORT}"
+
+[etherscan]
+ethereum = { key = "${ETHERSCAN_ETHERUM_API_KEY}", url = "https://api.etherscan.io/api", chain = 1 }
+base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api", chain = 8453 }
+base_goerli = { key = "${BASESCAN_API_KEY}", url = "https://api-goerli.basescan.org/api", chain = 84531 }
+arbitrum = { key = "${ARBISCAN_API_KEY}", url = "https://api.arbiscan.io/api", chain = 42161 }
+optimism = { key = "${OPTIMISM_ETHERSCAN_API_KEY}", url = "https://api-optimistic.etherscan.io/api", chain = 10 }
+optimism-goerli = { key = "${OPTIMISM_ETHERSCAN_API_KEY}", url = "https://api-goerli-optimistic.etherscan.io/api", chain = 420 }
+polygon = { key = "${POLYGONSCAN_API_KEY}", url = "https://api-testnet.polygonscan.com/api", chain = 137 }
+ftm-testnet = { key = "${FTMSCAN_API_KEY}", url = "https://api-testnet.ftmscan.com/api" }
+fuji = { key = "${SNOWTRACE_API_KEY}", url = "https://api-testnet.snowtrace.io/api" }
+sepolia = { key = "${ETHERSCAN_ETHERUM_API_KEY}", url = "https://api-sepolia.etherscan.io/api", chain = 11155111 }
