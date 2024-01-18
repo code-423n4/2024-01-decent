@@ -1,21 +1,5 @@
 ## ⭐️ Sponsor: Edit this `README.md` file
 
-Decent allows for single click transactions on any chain, paid for from any source chain / token.
-i.e. suppose I want to mint an NFT on optimism, but only have funds on Base, I can send that transaction, paying with DAI on Base, to receive my funds on Optimism.
-
-The two libraries Decent uses to do so are `UTB`, which handles the routing of cross chain transactions and passes them through a selected bridge, and `decent-bridge`, which is decent's custom bridge built on top of layerzero's OFT standard.
-
-`UTB` calls one of two functions, `swapAndExecute`, or `bridgeAndExecute`. As their names suggest, `swapAndExecute` performs same-chain txs for a user (from potentially diff payment tokens), and `bridgeAndExecute` performs cross-chain txs for a user.
-In efforts of being generalizable, different `swappers` and `bridgeAdapters` can be added to UTB.
-
-All `swappers` must implement `ISwapper`, as can be seen in `UniSwapper.sol`. Similarly, all `bridgeAdapters` must implement `IBridgeAdapter`, and examples can be seen with `DecentBridgeAdapter` and `StargateBridgeAdapter`.
-
-`UTBExecutor` executes any additional logic for `UTB` (i.e. minting an nft)
-
-The `DecentBridge` is built on top of layer zero's OFT contract, and additional implementation information can be found in the `decent-bridge` README.
-
-- [ ] [This checklist in Notion](https://code4rena.notion.site/Key-info-for-Code4rena-sponsors-f60764c4c4574bbf8e7a6dbd72cc49b4#0cafa01e6201462e9f78677a39e09746) provides some best practices for Code4rena audits.
-
 ## ⭐️ Sponsor: Final touches
 
 - [ ] Review and confirm the details in the section titled "Scoping details" and alert Code4rena staff of any changes.
@@ -57,30 +41,43 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 
 # Overview
 
-[ ⭐️ SPONSORS: add info here ]
+Decent allows for single click transactions on any chain, paid for from any source chain / token.
+i.e. suppose I want to mint an NFT on optimism, but only have funds on Base, I can send that transaction, paying with DAI on Base, to receive my funds on Optimism.
+
+The two libraries Decent uses to do so are `UTB`, which handles the routing of cross chain transactions and passes them through a selected bridge, and `decent-bridge`, which is decent's custom bridge built on top of layerzero's OFT standard.
+
+`UTB` calls one of two functions, `swapAndExecute`, or `bridgeAndExecute`. As their names suggest, `swapAndExecute` performs same-chain txs for a user (from potentially diff payment tokens), and `bridgeAndExecute` performs cross-chain txs for a user.
+In efforts of being generalizable, different `swappers` and `bridgeAdapters` can be added to UTB.
+
+All `swappers` must implement `ISwapper`, as can be seen in `UniSwapper.sol`. Similarly, all `bridgeAdapters` must implement `IBridgeAdapter`, and examples can be seen with `DecentBridgeAdapter` and `StargateBridgeAdapter`.
+
+`UTBExecutor` executes any additional logic for `UTB` (i.e. minting an nft)
+
+The `DecentBridge` is built on top of layer zero's OFT contract, and additional implementation information can be found in the `decent-bridge` README.
+
+- [ ] [This checklist in Notion](https://code4rena.notion.site/Key-info-for-Code4rena-sponsors-f60764c4c4574bbf8e7a6dbd72cc49b4#0cafa01e6201462e9f78677a39e09746) provides some best practices for Code4rena audits.
 
 ## Links
 
-- **Previous audits:**
-- **Documentation:**
-- **Website:**
-- **Twitter:**
-- **Discord:**
+- **Documentation: [docs.decent.xyz](https://docs.decent.xyz)**
+- **decent.xyz: [decent.xyz](https://decent.xyz)**
+- **Twitter: [decentxyz](https://twitter.com/decentxyz)**
 
 # Scope
 
-[ ⭐️ SPONSORS: add scoping and technical details here ]
-
-- [ ] In the table format shown below, provide the name of each contract and:
-  - [ ] source lines of code (excluding blank lines and comments) in each _For line of code counts, we recommend running prettier with a 100-character line length, and using [cloc](https://github.com/AlDanial/cloc)._
-  - [ ] external contracts called in each
-  - [ ] libraries used in each
-
-_List all files in scope in the table below (along with hyperlinks) -- and feel free to add notes here to emphasize areas of focus._
-
-| Contract                                                                                                | SLOC | Purpose                | Libraries used                                           |
-| ------------------------------------------------------------------------------------------------------- | ---- | ---------------------- | -------------------------------------------------------- |
-| [contracts/folder/sample.sol](https://github.com/code-423n4/repo-name/blob/contracts/folder/sample.sol) | 123  | This contract does XYZ | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| Contract                                                                                           | SLOC | Purpose                                         | Libraries used |
+| -------------------------------------------------------------------------------------------------- | ---- | ----------------------------------------------- | -------------- |
+| [src/UTB.sol](./src/UTB.sol)                                                                       | 232  | Calls `swapAndExeucte` and `bridgeAndExecute`   |                |
+| [src/UTBExecutor.sol](./src/UTBExecutor.sol)                                                       | 52   | Calls the executor for esxternal contract calls |                |
+| [src/UTBFeeCollector.sol](./src/UTBFeeCollector.sol)                                               | 50   | Collects fees on UTB contract calls             |
+| [src/bridge_adapters/BaseAdapter.sol](./src/bridge_adapters/BaseAdapter.sol)                       | 16   | Standard functionality for each bridge adapter  |
+| [src/bridge_adapters/DecentBridgeAdapter.sol](./src/bridge_adapters/DecentBridgeAdapter.sol)       | 137  | adapter impl for decent bridge                  |
+| [src/bridge_adapters/StargateBridgeAdapter.sol](./src/bridge_adapters/StargateBridgeAdapter.sol)   | 190  | adapter impl for stargate bridge                |
+| [src/swappers/SwapParams.sol](./src/swappers/SwapParams.sol)                                       | 13   | params for swapper files                        |
+| [src/swappers/UniSwapper.sol](./src/swappers/UniSwapper.sol)                                       | 145  | implementation of ISwapper for UniV3            |
+| [lib/decent-bridge/src/DcntEth.sol](./lib/decent-bridge/src/DcntEth.sol)                           | 27   | OFTV2 implementation for DcntEth                | `OFTV2`        |
+| [lib/decent-bridge/src/DecentEthRouter.sol](./lib/decent-bridge/src/DecentEthRouter.sol)           | 290  | Core bridge logic                               |                |
+| [lib/decent-bridge/src/DecentBridgeExecutor.sol](./lib/decent-bridge/src/DecentBridgeExecutor.sol) | 57   | makes external contract calls                   |                |
 
 ## Out of scope
 
@@ -88,15 +85,12 @@ _List any files/contracts that are out of scope for this audit._
 
 # Additional Context
 
-- [ ] Describe any novel or unique curve logic or mathematical models implemented in the contracts
-- [ ] Please list specific ERC20 that your protocol is anticipated to interact with. Could be "any" (literally anything, fee on transfer tokens, ERC777 tokens and so forth) or a list of tokens you envision using on launch.
-- [ ] Please list specific ERC721 that your protocol is anticipated to interact with.
-- [ ] Which blockchains will this code be deployed to, and are considered in scope for this audit?
-- [ ] Please list all trusted roles (e.g. operators, slashers, pausers, etc.), the privileges they hold, and any conditions under which privilege escalation is expected/allowable
+- Protocol is expected to interact with any erc20 with dex liquidity, as a potentially payment token for `swapAndExecute` or `bridgeAndExecute`
+- Protocol is theoretically expected to interact with any erc721s, such as through minting them in `swapAndExecute` or `bridgeAndExecute`
+- Will be deployed to most blockchains, can consider scope of blockchains to those supported by layerzero for now (listed on website)
 - [ ] In the event of a DOS, could you outline a minimum duration after which you would consider a finding to be valid? This question is asked in the context of most systems' capacity to handle DoS attacks gracefully for a certain period.
-- [ ] Is any part of your implementation intended to conform to any EIP's? If yes, please list the contracts in this format:
-  - `Contract1`: Should comply with `ERC/EIPX`
-  - `Contract2`: Should comply with `ERC/EIPY`
+- [ ] Is any part of your implementation intended to conform to any EIP's? Yes:
+  - `DecentEth.sol`: Should comply with the `ERC-20` standard
 
 ## Attack ideas (Where to look for bugs)
 
