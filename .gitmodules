@@ -1,3 +1,21 @@
 [submodule "lib/forge-std"]
 	path = lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "lib/solmate"]
+	path = lib/solmate
+	url = https://github.com/transmissions11/solmate
+[submodule "lib/v3-periphery"]
+	path = lib/v3-periphery
+	url = https://github.com/uniswap/v3-periphery
+[submodule "lib/decent-bridge"]
+	path = lib/decent-bridge
+	url = https://github.com/decentxyz/decent-bridge
+[submodule "lib/v3-core"]
+	path = lib/v3-core
+	url = https://github.com/Uniswap/v3-core
+[submodule "lib/swap-router-contracts"]
+	path = lib/swap-router-contracts
+	url = https://github.com/Uniswap/swap-router-contracts
+[submodule "lib/forge-toolkit"]
+	path = lib/forge-toolkit
+	url = https://github.com/decentxyz/forge-toolkit
