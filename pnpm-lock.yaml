@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.0.15
     version: 1.0.15(@wagmi/core@1.4.12)(react@18.2.0)(viem@1.21.3)(wagmi@1.4.12)
   '@decent.xyz/houndry-toolkit':
-    specifier: ^1.0.23
-    version: 1.0.23(react@18.2.0)(ts-node@10.9.2)(typescript@5.0.4)
+    specifier: ^1.0.24
+    version: 1.0.24(react@18.2.0)(ts-node@10.9.2)(typescript@5.0.4)
   '@nomicfoundation/hardhat-viem':
     specifier: ^1.0.1
     version: 1.0.2(hardhat@2.19.4)(typescript@5.0.4)(viem@1.21.3)
@@ -177,8 +177,8 @@ packages:
       - zod
     dev: false
 
-  /@decent.xyz/houndry-toolkit@1.0.23(react@18.2.0)(ts-node@10.9.2)(typescript@5.0.4):
-    resolution: {integrity: sha512-yYTj3sSC5KiFzqiUXNXiMWNzb2F+dgC09NteK6c1RgTia6F8y371qA1f2uAlHTcUoeYByw9OXzRBvloZd8kfew==}
+  /@decent.xyz/houndry-toolkit@1.0.24(react@18.2.0)(ts-node@10.9.2)(typescript@5.0.4):
+    resolution: {integrity: sha512-Qzp6cOxhXA9StjsQISQpd1GkWchwC+0dkqV0jbR/o0O5knGegyF7f4kj7Xn1HmAQX+gVf5due7ztr1iwtnG1vg==}
     dependencies:
       '@decent.xyz/forknet-glue': 0.0.3(react@18.2.0)(ts-node@10.9.2)(typescript@5.0.4)
       '@types/shelljs': 0.8.15
@@ -3720,7 +3720,6 @@ packages:
       is-hex-prefixed: 1.0.0
       strip-hex-prefix: 1.0.0
     dev: false
-    bundledDependencies: false
 
   /eventemitter3@4.0.7:
     resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
