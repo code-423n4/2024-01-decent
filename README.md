@@ -1,14 +1,3 @@
-## ⭐️ Sponsor: Edit this `README.md` file
-
-## ⭐️ Sponsor: Final touches
-
-- [ ] Review and confirm the details in the section titled "Scoping details" and alert Code4rena staff of any changes.
-- [ ] Review and confirm the list of in-scope files in the `scope.txt` file in this directory. Any files not listed as "in scope" will be considered out of scope for the purposes of judging, even if the file will be part of the deployed contracts.
-- [ ] Check that images and other files used in this README have been uploaded to the repo as a file and then linked in the README using absolute path (e.g. `https://github.com/code-423n4/yourrepo-url/filepath.png`)
-- [ ] Ensure that _all_ links and image/file paths in this README use absolute paths, not relative paths
-- [ ] Check that all README information is in markdown format (HTML does not render on Code4rena.com)
-- [ ] Remove any part of this template that's not relevant to the final version of the README (e.g. instructions in brackets and italic)
-- [ ] Delete this checklist and all text above the line below when you're ready.
 
 ---
 
@@ -37,8 +26,6 @@ Automated findings output for the audit can be found [here](https://github.com/c
 
 _Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards._
 
-[ ⭐️ SPONSORS: Are there any known issues or risks deemed acceptable that shouldn't lead to a valid finding? If so, list them here. ]
-
 # Overview
 
 Decent allows for single click transactions on any chain, paid for from any source chain / token.
@@ -55,7 +42,7 @@ All `swappers` must implement `ISwapper`, as can be seen in `UniSwapper.sol`. Si
 
 The `DecentBridge` is built on top of layer zero's OFT contract, and additional implementation information can be found in the `decent-bridge` README.
 
-- [ ] [This checklist in Notion](https://code4rena.notion.site/Key-info-for-Code4rena-sponsors-f60764c4c4574bbf8e7a6dbd72cc49b4#0cafa01e6201462e9f78677a39e09746) provides some best practices for Code4rena audits.
+[This checklist in Notion](https://code4rena.notion.site/Key-info-for-Code4rena-sponsors-f60764c4c4574bbf8e7a6dbd72cc49b4#0cafa01e6201462e9f78677a39e09746) provides some best practices for Code4rena audits.
 
 ## Links
 
@@ -67,17 +54,17 @@ The `DecentBridge` is built on top of layer zero's OFT contract, and additional 
 
 | Contract                                                                                                                                      | SLOC | Purpose                                         | Libraries used |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ----------------------------------------------- | -------------- |
-| [src/UTB.sol](https://github.com/code-423n4/2024-01-decent/src/UTB.sol)                                                                       | 232  | Calls `swapAndExeucte` and `bridgeAndExecute`   |                |
-| [src/UTBExecutor.sol](https://github.com/code-423n4/2024-01-decent/src/UTBExecutor.sol)                                                       | 52   | Calls the executor for esxternal contract calls |                |
-| [src/UTBFeeCollector.sol](https://github.com/code-423n4/2024-01-decent/src/UTBFeeCollector.sol)                                               | 50   | Collects fees on UTB contract calls             |
-| [src/bridge_adapters/BaseAdapter.sol](https://github.com/code-423n4/2024-01-decent/src/bridge_adapters/BaseAdapter.sol)                       | 16   | Standard functionality for each bridge adapter  |
-| [src/bridge_adapters/DecentBridgeAdapter.sol](https://github.com/code-423n4/2024-01-decent/src/bridge_adapters/DecentBridgeAdapter.sol)       | 137  | adapter impl for decent bridge                  |
-| [src/bridge_adapters/StargateBridgeAdapter.sol](https://github.com/code-423n4/2024-01-decent/src/bridge_adapters/StargateBridgeAdapter.sol)   | 190  | adapter impl for stargate bridge                |
-| [src/swappers/SwapParams.sol](https://github.com/code-423n4/2024-01-decent/src/swappers/SwapParams.sol)                                       | 13   | params for swapper files                        |
-| [src/swappers/UniSwapper.sol](https://github.com/code-423n4/2024-01-decent/src/swappers/UniSwapper.sol)                                       | 145  | implementation of ISwapper for UniV3            |
-| [lib/decent-bridge/src/DcntEth.sol](https://github.com/code-423n4/2024-01-decent/lib/decent-bridge/src/DcntEth.sol)                           | 27   | OFTV2 implementation for DcntEth                | `OFTV2`        |
-| [lib/decent-bridge/src/DecentEthRouter.sol](https://github.com/code-423n4/2024-01-decent/lib/decent-bridge/src/DecentEthRouter.sol)           | 290  | Core bridge logic                               |                |
-| [lib/decent-bridge/src/DecentBridgeExecutor.sol](https://github.com/code-423n4/2024-01-decent/lib/decent-bridge/src/DecentBridgeExecutor.sol) | 57   | makes external contract calls                   |                |
+| [src/UTB.sol](https://github.com/code-423n4/2024-01-decent/blob/main/src/UTB.sol)                                                                       | 232  | Calls `swapAndExeucte` and `bridgeAndExecute`   |                |
+| [src/UTBExecutor.sol](https://github.com/code-423n4/2024-01-decent/blob/main/src/UTBExecutor.sol)                                                       | 52   | Calls the executor for esxternal contract calls |                |
+| [src/UTBFeeCollector.sol](https://github.com/code-423n4/2024-01-decent/blob/main/src/UTBFeeCollector.sol)                                               | 50   | Collects fees on UTB contract calls             |
+| [src/bridge_adapters/BaseAdapter.sol](https://github.com/code-423n4/2024-01-decent/blob/main/src/bridge_adapters/BaseAdapter.sol)                       | 16   | Standard functionality for each bridge adapter  |
+| [src/bridge_adapters/DecentBridgeAdapter.sol](https://github.com/code-423n4/2024-01-decent/blob/main/src/bridge_adapters/DecentBridgeAdapter.sol)       | 137  | adapter impl for decent bridge                  |
+| [src/bridge_adapters/StargateBridgeAdapter.sol](https://github.com/code-423n4/2024-01-decent/blob/main/src/bridge_adapters/StargateBridgeAdapter.sol)   | 190  | adapter impl for stargate bridge                |
+| [src/swappers/SwapParams.sol](https://github.com/code-423n4/2024-01-decent/blob/main/src/swappers/SwapParams.sol)                                       | 13   | params for swapper files                        |
+| [src/swappers/UniSwapper.sol](https://github.com/code-423n4/2024-01-decent/blob/main/src/swappers/UniSwapper.sol)                                       | 145  | implementation of ISwapper for UniV3            |
+| [lib/decent-bridge/src/DcntEth.sol](https://github.com/decentxyz/decent-bridge/blob/7f90fd4489551b69c20d11eeecb17a3f564afb18/src/DcntEth.sol)                           | 27   | OFTV2 implementation for DcntEth                | `OFTV2`        |
+| [lib/decent-bridge/src/DecentEthRouter.sol](https://github.com/decentxyz/decent-bridge/blob/7f90fd4489551b69c20d11eeecb17a3f564afb18/src/DecentEthRouter.sol)           | 290  | Core bridge logic                               |                |
+| [lib/decent-bridge/src/DecentBridgeExecutor.sol](https://github.com/decentxyz/decent-bridge/blob/7f90fd4489551b69c20d11eeecb17a3f564afb18/src/DecentBridgeExecutor.sol) | 57   | makes external contract calls                   |                |
 
 ## Out of scope
 
@@ -96,9 +83,6 @@ The `DecentBridge` is built on top of layer zero's OFT contract, and additional 
 - Fund Accumulation: Other than the UTBFeeCollector, and DcntEth, the contracts are not intended to hold on to any funds or unnecessary approvals. Any native value or erc20 flowing through the protocol should either get delivered or refunded.
 - Destination Chain Failures: Transactions that revert on the destination chain can potentially place user’s funds at risk of being lost. Any edge cases should be properly handled such that the user is issued a refund on the destination chain.
 
-## Main invariants
-
-_Describe the project's main invariants (properties that should NEVER EVER be broken)._
 
 ## Scoping Details
 
@@ -106,9 +90,7 @@ _Describe the project's main invariants (properties that should NEVER EVER be br
 - If you have a public code repo, please share it here: github.com/decentxyz/UTB, github.com/decentxyz/decent-bridge note that the UTB branch is `develop`
 - How many contracts are in scope?: 11
 - Total SLoC for these contracts?: 1193
-- How many external imports are there?:
 - How many separate interfaces and struct definitions are there for the contracts within scope?: 11 interfaces
-- How many external calls?:
 - What is the overall line coverage percentage provided by your tests?: 75
 - Check all that apply: ERC20, Multi-Chain, Uses L2
 - Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?: knowledge of lz would be helpful
