@@ -1,5 +1,6 @@
 src/UTB.sol
 src/UTBExecutor.sol
+src/UTBFeeCollector.sol
 src/bridge_adapters/BaseAdapter.sol
 src/bridge_adapters/DecentBridgeAdapter.sol
 src/bridge_adapters/StargateBridgeAdapter.sol
