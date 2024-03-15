@@ -1,0 +1,1346 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q1-2024 / decent-jan19
+==============================================================
+
+[01/17/2024 18:40] knownfactc4_29311 (pinned)
+👋 Hello and welcome to the audit channel for the $35,500 in USDC **Decent** audit!
+
+📆 Audit opens 01/19/2024 20:00 (20:00 UTC) and runs through 01/23/2024 20:00 (20:00 UTC) (3 days).
+
+Please give a warm welcome to the Decent team, particularly @willkantaros and @zev2axa, who will be available for questions either here in the channel or via DM in the EST timezone.
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/audits/2024-01-decent
+
+
+[01/17/2024 18:41] knownfactc4_29311
+Pinned a message.
+
+
+[01/17/2024 18:49] 0xstalin
+hello, just wanted to confirm if this contest will run only for 3 days? opens the 19th and closes the 22?
+
+
+[01/17/2024 18:56] knownfactc4_29311
+Yes, that's correct.
+
+{Reactions}
+🫡 
+
+[01/17/2024 19:06] kuprumion
+Is there a  specific reason to do the competition for only 3 days, and over the weekend? I suppose this severely limits both the number of wardens able to participate, as well as their ability to analyse the protocol properly
+
+
+[01/17/2024 19:07] aodkgkrogrogoovg2o3btivr
+its a small contest, only  900 sloc
+
+
+[01/17/2024 19:07] kartoonjoy
+Sponsors have various constraints, dates or otherwise. We do our best to accomodate. Thanks
+
+{Reactions}
+👍 (4) 
+
+[01/17/2024 19:08] aodkgkrogrogoovg2o3btivr
+but yeah with 5+ contests in the same time its harder for most to participate
+
+
+[01/17/2024 19:23] mctoady
+900 sloc in 3 days is still a pretty wild turn around for an actual thorough review, but it is what it is
+
+{Reactions}
+👍 
+
+[01/17/2024 20:07] mrpotatomagic
+@willkantaros @zev2axa does the scope of this audit include any external integrations like LayerZero, Axelar, Wormhole?
+
+
+[01/18/2024 04:29] haxatron1
+Probably dont want to deal with 1k++++ submissions.
+
+{Reactions}
+😆 (5) 
+
+[01/18/2024 12:20] tumelo_crypto
+There will probably still be like 800 submissions  though😂😂
+
+
+[01/18/2024 12:20] tumelo_crypto
+New auditors usually go for the quick and small contests first so all of them will do this one
+
+
+[01/18/2024 12:36] pkqs90
+as a new auditor, i can say this is exactly what im thinking
+
+{Reactions}
+😆 (9) 
+
+[01/18/2024 13:29] kartoonjoy
+Let's limit conversation in this channel, please
+
+{Reactions}
+🤝 (5) 
+
+[01/18/2024 22:23] willkantaros
+layerzero, yeah
+
+
+[01/19/2024 03:06] jacobmartin0406
+Can you kindly provide any related docs?
+
+
+[01/19/2024 06:17] 0xabhay.
+https://docs.decent.xyz/docs/key-concepts
+
+{Embed}
+https://docs.decent.xyz/docs/key-concepts
+Key Concepts
+Definitions for features within The Box.
+
+{Reactions}
+thankyou 
+
+[01/19/2024 09:10] thebirdeye.eth
+This contest not yet live?
+
+
+[01/19/2024 10:59] kartoonjoy
+https://discord.com/channels/810916927919620096/1196926933590614036/1197249210924404757
+
+
+[01/19/2024 12:34] m4k2
+Hi, did you already have been audited ? 
+
+Up : https://github.com/decentxyz/Box-Audit/blob/074260ee9bb71254248eef19482909937fd95c29/The_Box_Audit_July_2023.pdf
+
+{Reactions}
+😅 
+
+[01/19/2024 18:50] willkantaros
+hey yes we were audited in may, these contracts have been significantly updated since then
+
+
+[01/19/2024 20:02] C4 (pinned)
+**Automated Findings / Publicly Known Issues**
+
+Reminder: all [Automated Findings / Publicly Known Issues](https://github.com/code-423n4/2024-01-decent#automated-findings--publicly-known-issues) are out of scope and ineligible for awards.
+
+{Embed}
+https://github.com/code-423n4/2024-01-decent
+GitHub - code-423n4/2024-01-decent
+Contribute to code-423n4/2024-01-decent development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q1-2024 - decent-jan19 [1196926933590614036].txt_Files/7920534c-718c-4741-b929-d61139b4364b-AEA3F
+
+
+[01/19/2024 20:03] woolliedev
+hey guys
+
+
+[01/19/2024 20:03] willkantaros
+yo!
+
+
+[01/19/2024 20:03] thebrittfactor
+Pinned a message.
+
+
+[01/19/2024 20:03] woolliedev
+how are yall planning to do this audit?
+
+
+[01/19/2024 20:04] woolliedev
+hey there!
+
+
+[01/19/2024 20:31] sovaslava9
+@KnownFact | C4 on page https://code4rena.com/audits/2024-01-decent  "Total SLoC for these contracts?: 1193" but in rsvp channel information about 900..
+
+{Embed}
+https://code4rena.com/audits/2024-01-decent
+Decent | Code4rena
+$36,500 in USDC
+19 January 8:00 PM—22 January 8:00 PM
+Code4rena - ARCHIVE-Q1-2024 - decent-jan19 [1196926933590614036].txt_Files/c4-og-banner-05885.png
+
+
+[01/19/2024 20:39] knownfactc4_29311
+The readme has the most accurate SLOC counts, so go by the page.
+
+
+[01/19/2024 20:50] xkeywordx
+lol, was thinking the same. This will be my second contest, but I promise I am doing my best to submit ONLY the things that are not in the "known issues" secttions.
+
+
+[01/19/2024 21:03] mladenov0603
+Are there any docs with sample data of `swapInstructions`?
+
+
+[01/19/2024 21:19] xkeywordx
+Question, are we supposed to audit the code present here in the "Scoping details" section 
+
+If you have a public code repo, please share it here: github.com/decentxyz/UTB, github.com/decentxyz/decent-bridge note that the UTB branch is `develop`
+
+Or are we supposed to audit the code present on GitHub here? https://github.com/code-423n4/2024-01-decent
+
+
+[01/19/2024 21:27] blckhv
+There are the needed rpc's to run the tests, so you don't have to manually search for them:
+PS. didn't manage to find the last one 
+```
+#### rpcs
+ETHEREUM_RPC_URL=https://ethereum.publicnode.com
+SEPOLIA_RPC_URL=https://sepolia.drpc.org
+ARBITRUM_RPC_URL=https://arb1.arbitrum.io/rpc    
+ARBITRUM_GOERLI_RPC_URL=https://goerli-rollup.arbitrum.io/rpc    
+ARBITRUM_SEPOLIA_RPC_URL=https://sepolia-rollup.arbitrum.io/rpc    
+OPTIMISM_RPC_URL=https://rpc.ankr.com/optimism    
+OPTIMISM_GOERLI_RPC_URL=https://rpc.goerli.optimism.gateway.fm    
+OPTIMISM_SEPOLIA_RPC_URL=https://sepolia.optimism.io
+BASE_RPC_URL=wss://base.gateway.tenderly.co    
+BASE_GOERLI_RPC_URL=wss://base-goerli.gateway.tenderly.co
+ZORA_RPC_URL=https://rpc.zora.energy    
+ZORA_GOERLI_RPC_URL=https://testnet.rpc.zora.energy
+POLYGON_RPC_URL=https://polygon.meowrpc.com    
+POLYGON_MUMBAI_RPC_URL=wss://polygon-mumbai.gateway.tenderly.co    
+AVALANCHE_RPC_URL=https://avalanche.drpc.org/
+AVALANCHE_FUJI_RPC_URL=https://avalanche-fuji.drpc.org/
+FANTOM_RPC_URL=wss://fantom.publicnode.com    
+FANTOM_TESTNET_RPC_URL=wss://fantom-testnet.publicnode.com    
+MOONBEAM_RPC_URL=https://rpc.api.moonbeam.network
+MOONBEAM_TESTNET_RPC_URL=https://rpc.testnet.moonbeam.network
+RARIBLE_TESTNET_RPC_URL=
+```
+
+{Reactions}
+thankyou (20) 
+
+[01/19/2024 23:41] mladenov0603
+Does anyone tried to deploy to testnet? I am receving the following error "Failed to resolve env var `ARBISCAN_API_KEY` in `${ARBISCAN_API_KEY}`: environment variable not found"
+
+
+[01/20/2024 00:51] willkantaros
+to do so, would have to copy your api key from arbiscan to set that up
+
+
+[01/20/2024 04:48] 0xabhay.
+how can i clone this repo
+
+
+[01/20/2024 05:09] 0xsimeon
+`git clone git@github.com:code-423n4/2024-01-decent.git`
+
+Note: this is for ssh.
+
+
+[01/20/2024 05:11] 0xsimeon
+yes
+
+
+[01/20/2024 05:15] 0xsimeon
+@willkantaros How can I get these tests to pass? I already add `.env`
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - decent-jan19 [1196926933590614036].txt_Files/Screenshot_2024-01-20_at_6.15.08_AM-1EF8B.png
+
+
+[01/20/2024 05:26] Message Wolf#0225 (pinned)
+**Automated Findings / Publicly Known Issues**
+
+Automated findings output for the audit can be found [here](https://github.com/code-423n4/2024-01-decent/blob/main/bot-report.md).
+
+*Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
+
+
+[01/20/2024 05:49] volokinn
+Spin up an anvil chain and add a FOUNDRY_PRIVATE_KEY in .env file, and it should be good to go
+
+{Reactions}
+thankyou 
+
+[01/20/2024 06:06] 0xsimeon
+Thank you
+
+{Reactions}
+🙌 
+
+[01/20/2024 07:51] mladenov0603
+I am trying to deploy it on sepolia, is there a way to do it without arbiscan api key
+
+
+[01/20/2024 07:52] nmirchev8
+Hey,
+How would the `feeSplitter` owner sign each `swapAndExecute` instructions?
+
+
+[01/20/2024 07:59] mladenov0603
+I've tried to add it in env file but still does work ```ARBISCAN_API_KEY=key```
+
+
+[01/20/2024 08:05] 0xstalin
+most likely through an API or smth that connects to a backend where is encrypted the private key of the `signer` account
+
+
+[01/20/2024 08:08] nmirchev8
+So there would be validation if the instructuins and fees are with valid values and generate sig each time?
+
+
+[01/20/2024 08:10] 0xstalin
+I think this api will receive the instructions, it will compute the fees for the operation being performed and the signed will sign a message to validate that the fee's data is correct and the user is paying the correct amount of fees for the type of operation being performed
+
+
+[01/20/2024 08:10] 0xstalin
+I might be wrong, but that's the conclusion I came up with
+
+{Reactions}
+✅ 💯 
+
+[01/20/2024 08:30] nmirchev8
+Thanks
+@willkantaros would be great if you can confirm
+
+
+[01/20/2024 09:32] niser93
+Hi! I modify the .env.example file adding rpcs. Anvil is running and i added the private key. I have this error:
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - decent-jan19 [1196926933590614036].txt_Files/image-346E0.png
+
+
+[01/20/2024 09:42] blckhv
+did you remove `.example` from the env file's name?
+
+
+[01/20/2024 09:52] 0xshaheen
+why require error msgs are concanted? this is the first i have seen something like this thats why I'm just curious: ```js
+        require(
+            destinationBridgeAdapter[dstChainId] != address(0),
+            string.concat("dst chain address not set ")
+        );
+```
+Does it help save some gas? 🤔
+
+
+[01/20/2024 10:00] niser93
+No 😅 my bad! Now i'm having this error. I didn't set TESTNET_PRIVATE_KEY and MAINNET_PRIVATE_KEY in.env, but just the FOUNDRY one
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - decent-jan19 [1196926933590614036].txt_Files/image-DE548.png
+
+
+[01/20/2024 10:16] 0xshaheen
+Hi, I think the schedule for this contest is really tight. It should have been at least a week
+
+
+[01/20/2024 10:32] aamirusmani1552
+Agree
+
+
+[01/20/2024 11:41] sovaslava9
+Hello. I've got error while do pnpm i . And in lib folder there are not files..
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - decent-jan19 [1196926933590614036].txt_Files/image-4F9A1.png
+
+
+[01/20/2024 12:04] jvorex
+looks like you need react, wagmi and node deps installed
+
+
+[01/20/2024 12:12] mrpotatomagic
+@willkantaros @zev2axa please check private thread
+
+
+[01/20/2024 12:44] thebrittfactor
+Pinned a message.
+
+
+[01/20/2024 13:16] nmirchev8
+The whole scope of contracts would be deployed once per supported chain, right?
+
+
+[01/20/2024 13:21] 0xabhay.
+any erc20 can interact with this contract?
+
+
+[01/20/2024 13:29] volokinn
+[Any token with dex liquidity.](https://code4rena.com/audits/2024-01-decent#:~:text=Protocol%20is%20expected%20to%20interact%20with%20any%20erc20%20with%20dex%20liquidity%2C%20as%20it%20can%20be%20potential%20payment%20token%20for%20swapAndExecute%20or%20bridgeAndExecute)
+
+{Reactions}
+thankyou 
+
+[01/20/2024 14:26] heavenz52
+What is the least number of environment variables I can fill to get started?
+
+ I use a free tier alchemy and so far I have filled the following RPC
+ETHEREUM_RPC_URL
+SEPOLIA_RPC_URL
+ARBITRUM_RPC_URL
+ARBITRUM_GOERLI_RPC_URL
+ARBITRUM_SEPOLIA_RPC_URL
+POLYGON_MUMBAI_RPC_URL
+
+Now, thats the limit.
+
+(I just want tests to pass so that I can start looking into the code and do security review)
+
+
+[01/20/2024 14:26] heavenz52
+PS: I am a newbie
+
+
+[01/20/2024 14:27] bronze_pickaxe
+https://discord.com/channels/810916927919620096/1196926933590614036/1198015909042856086 :hi5:
+
+
+[01/20/2024 14:32] heavenz52
+Thanks for pointing me to that, but sadly those endpoints are terrible - they throwing way too many errors : P
+
+
+[01/20/2024 14:51] 0xdemonnn
+@willkantaros@zev2axa I have created a private thread, Please if both of you have time to check the thread. Thanks
+
+
+[01/20/2024 14:53] 0xtendency
+Just three days for this type of contest and sponsors still aren't responsive.
+This will be an interesting one
+
+{Reactions}
+🪓 (4) 😅 (4) 
+
+[01/20/2024 18:57] zev2axa
+Started a thread.
+
+
+[01/20/2024 19:03] zev2axa
+hello all, spent the last few hours replying to several of you in DMs, and realize some of you have been answering each other's questions here in the public chat. sorry for any slow replys here, but please feel free to bump or dm any open issues so we can address. and thank you for your participation, hope you're having as much fun as we are 🙇‍♂️
+
+{Reactions}
+😳 🫡 (3) ❤️ 
+
+[01/20/2024 19:24] 0xshaheen
+Pls confirm this sir @zev2axa
+
+
+[01/20/2024 19:27] zev2axa
+yes, confirmed
+
+{Reactions}
+🫡 
+
+[01/20/2024 19:28] zev2axa
+☝️ great summary
+
+
+[01/20/2024 19:43] nmirchev8
+So the flow if I want to swap USDC for WETH and bridge from Mainnet to Arb is:
+1. API query to calc the fees for provided params
+2. With provided sig - call to "swapAndBridge" 
+3. The flow between contracts
+
+?
+
+
+[01/20/2024 20:10] volokinn
+Hey @zev2axa, is the "paymentOperator" a contract that is currently in scope?
+
+
+[01/20/2024 20:14] zev2axa
+not in scope... payment operator typically gets used in the case of secondary marketplace orders, i.e. seaport... where essentially, lets say I need to execute a transaction to a specific contract address, but i need to make the erc20 approval to an address other than that contract. believe seaport uses this to handle all the royalty payouts etc, so you approve the payment operator, and then call the target address... in most cases payment operator and target would be the same address
+
+{Reactions}
+thankyou (2) 
+
+[01/20/2024 20:14] zev2axa
+its the approved spender for the tx
+
+
+[01/20/2024 21:31] kirobrejka_80610
+@zev2axa I DMed  you a while ago. Can you see what I asked please
+
+
+[01/20/2024 21:33] zev2axa
+ah, will take a look here momentarily, thanks
+
+
+[01/20/2024 21:34] zev2axa
+would recommend people use the private threads with both myself @zev2axa  and @willkantaros rather than dm so you get a better shot at a timely reply
+
+{Reactions}
+👍 (2) 
+
+[01/20/2024 21:47] sovaslava9
+Does user can choose any fees.feeToken or not? or signer sign only feeTokens from known list, which will show on website?
+
+
+[01/20/2024 22:21] rahiti
+In a real-case scenario, how are the `DcntEth.sol` ERC20 tokens minted to a user ?
+
+
+[01/20/2024 23:46] sovaslava9
+Could someone explain please swapNoPath function? why function does not call router and transfer tokens to receiver from own balance.. oO ?
+
+
+[01/20/2024 23:55] 0xstalin
+it just wraps the native token
+
+{Reactions}
+🙏🏼 
+
+[01/21/2024 00:38] 0xsimeon
+QQ: What does "wrap the native token" mean?
+
+Sorry I just want to understand better
+
+{Reactions}
+👍 
+
+[01/21/2024 00:48] 0xg03.14
+eth  is native. Weth is wrapped
+
+
+[01/21/2024 00:48] 0xg03.14
+@0xSimeon
+
+
+[01/21/2024 04:55] nmirchev8
+@zev2axa ?
+
+
+[01/21/2024 05:36] 0xshaheen
+https://youtu.be/DuwQ6NuPQp4?si=DIVWriBACEzSlbiW
+
+
+[01/21/2024 07:57] mgf15
+anyone get the test running ?
+
+
+[01/21/2024 08:51] taner2344
+guys , what does it mean "**payload**" ?  what is the **load** here?
+
+{Reactions}
+4739_Skeletor 
+
+[01/21/2024 09:02] zdravkohr
+Payload is the calldata to call the target
+
+{Reactions}
+👍 (2) 
+
+[01/21/2024 09:45] 0xshaheen
+most of them. I'm running specfic tests and they are fine but when I try to run all the tests, I encounter weird errors
+
+
+[01/21/2024 09:47] 0xshaheen
+use `forge test --mt TEST_NAME` to run the specific test
+
+{Reactions}
+👍 (2) 
+
+[01/21/2024 12:27] nmirchev8
+Somebody has noticed how are the participants refunded when the dst chain call fails?
+
+
+[01/21/2024 12:33] sovaslava9
+In swapper.swapExactIn contract receive tokens  from uniswap(amountOut) and..send them to receiver. But next to code, in utb._swapAndExecute we call executor.execute() and executor transferFrom utb tokens..(or eth via payable keyword). but in this moment contact utb dont have any tokens i think, because swapper all received tokens sent to receiver.. maybe utb is receiver or user? if user.. i dont understand how it works)
+
+{Reactions}
+👍 
+
+[01/21/2024 13:18] pascal9476
+Just joined the Contest today
+
+
+[01/21/2024 13:19] pascal9476
+Tests are failing
+
+
+[01/21/2024 13:32] nmirchev8
+I think utb would be the receiver
+
+{Reactions}
+👍 (3) 
+
+[01/21/2024 14:21] 0xsimeon
+Thank you
+
+{Reactions}
+👍 
+
+[01/21/2024 15:50] sovaslava9
+what is amt  in  amt2Bridge word..?
+
+
+[01/21/2024 15:53] volokinn
+I think it is amount
+
+
+[01/21/2024 15:53] sovaslava9
+may be)
+
+
+[01/21/2024 15:54] volokinn
+You can look at the natspec 
+```
+* @param amt2Bridge The amount of the bridge token being transferred to the bridge adapter.
+```
+
+{Reactions}
+🙏🏼 
+
+[01/21/2024 18:14] maroutis
+@zev2axa @willkantaros, I sent you a DM in private thread ty.
+
+{Reactions}
+👆 
+
+[01/21/2024 18:15] blckhv
+https://tenor.com/view/tumbleweeds-desert-hot-dry-drought-gif-21341711
+
+{Embed}
+https://tenor.com/view/tumbleweeds-desert-hot-dry-drought-gif-21341711
+Code4rena - ARCHIVE-Q1-2024 - decent-jan19 [1196926933590614036].txt_Files/tumbleweeds-desert-E3D0F.png
+
+{Reactions}
+😅 (6) 
+
+[01/21/2024 19:12] sovaslava9
+Sponsors like weekends, even if their contest is 3 days only)
+
+
+[01/21/2024 20:02] sovaslava9
+Why user should add liquidity? in DecentEthRouter.addLiquidityWeth
+
+
+[01/21/2024 20:54] willkantaros
+hey @Maroutis , sent you a response
+
+{Reactions}
+👍 (2) 
+
+[01/22/2024 01:26] nuthan1159
+guys, any possibility to extend the contest, atleast a day ?🔫
+
+
+[01/22/2024 01:39] web3skid
+no
+
+{Reactions}
+💀 (6) 
+
+[01/22/2024 05:07] aamirusmani1552
+There are chances
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - decent-jan19 [1196926933590614036].txt_Files/Screenshot_2024-01-22-10-36-47-340_com.dis-16424.jpg
+
+
+[01/22/2024 05:10] sin1st3r__
+3 days were already enough. ppl need to learn how to cope
+
+{Reactions}
+🫡 (7) ❤️ 
+
+[01/22/2024 05:12] 0xshaheen
+Afaik, C4 only allows that change only in first 24-48 hours. 
+I wanted to have an extentsion of this audit as well but not now, i think its late
+
+
+[01/22/2024 05:22] niser93
+I got this error message. Could someone help me?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - decent-jan19 [1196926933590614036].txt_Files/image-FA490.png
+
+
+[01/22/2024 05:43] aamirusmani1552
+Oh ok. I don't know the c4 rules about extending. But I didn't ask for the extension. The question was something else. That came from their own side
+
+{Reactions}
+👍 
+
+[01/22/2024 06:53] 0xshaheen
+pls check the private thread sir @zev2axa
+
+
+[01/22/2024 07:07] pkqs90
++1. pls check private thread sir
+
+
+[01/22/2024 07:36] taner2344
+extend a day
+
+{Reactions}
+❌ (17) 😥 
+
+[01/22/2024 08:10] nmirchev8
+You have the oppertunity to add new skill to your resume!
+"DM for fast audits, without necessity to give me details about code implementation" 😉
+
+{Reactions}
+👍 (4) 🤡 (4) 👀 (2) 
+
+[01/22/2024 09:01] 0xauditism
+That's a decent skill to have
+
+{Reactions}
+😁 (2) 
+
+[01/22/2024 10:03] jes16jupyter
+I just started guys. 9 Hours..
+
+
+[01/22/2024 10:08] 0xprinc
+@zev2axa please check private thread. Thanks
+
+
+[01/22/2024 10:19] 0xeeyore
+Hi, any of sponsors active today?
+
+
+[01/22/2024 10:30] taner2344
+Will be interesting
+
+
+[01/22/2024 10:37] ev_om
+"completely unrelated docs for a frontend component will be highly appreciated"
+
+{Reactions}
+🤔 (2) 😆 (2) 🪓 
+
+[01/22/2024 11:12] 0xtimepunk
+https://github.com/decentxyz/UTB stopped working
+
+
+[01/22/2024 11:20] 0xshaheen
+You Here Sir 🫡
+
+{Reactions}
+🔥 
+
+[01/22/2024 11:20] 0xshaheen
+This is the contest repo https://github.com/code-423n4/2024-01-decent
+
+{Reactions}
+👍🏼 
+
+[01/22/2024 13:32] kartoonjoy (pinned)
+🚨 Wardens, please note: this audit is extended to 01/23/2024 20:00. Thanks! 🚨
+
+{Reactions}
+😢 (6) 😭 (7) 👍 (3) ✅ (3) 
+
+[01/22/2024 13:40] blckhv
+my hands were already burning from writing reports trying to fit the deadline 🤣
+
+{Reactions}
+🤣 (9) 
+
+[01/22/2024 13:48] thebrittfactor
+Pinned a message.
+
+{Reactions}
+thankyou 
+
+[01/22/2024 14:40] 0xshaheen
+The pot has increased as well?
+
+
+[01/22/2024 14:43] kartoonjoy
+no
+
+{Reactions}
+fence 
+
+[01/22/2024 15:39] mangoeth
+@zev2axa sent you a dm
+
+
+[01/22/2024 15:47] monrel
+Does this not break code4renas policy? From @sock https://discord.com/channels/810916927919620096/1176549245935955998/1181296583015419924
+
+{Reactions}
+👀 (2) 
+
+[01/22/2024 15:57] sockdrawermoney
+We’re still within 48h from a business day perspective.
+
+
+[01/22/2024 15:57] sockdrawermoney
+(Sat/Sun don’t count)
+
+{Reactions}
+😂 
+
+[01/22/2024 15:58] 0xauditism
+xd
+
+{Reactions}
+😂 (4) 
+
+[01/22/2024 16:08] monrel
+It does say the "first 48h of an audit". Isn't the point of the policy to not extend contests close to the deadline without adding more to the pot?
+
+{Reactions}
+👆 (8) 
+
+[01/22/2024 17:55] sockdrawermoney
+that was the intent, but (a) the policy didn't take into account the logistics of a 3-day contests starting on a friday, and (b) it also sounds like this was actually confirmed with the sponsor a couple days ago but, (c) CAs work weekdays so it wasn't formally announced (though it was indicated by the sponsor). we'll clarify the policy and tighten up our process.
+
+{Reactions}
+🫡 (5) ❤️ (5) 🤔 (2) 
+
+[01/23/2024 08:38] aamirusmani1552
+Would the swap fee depends on the amount of tokens to swap or only payload?
+
+
+[01/23/2024 08:44] taner2344
+if bridge is Stargate , fee  6 BPS if it's decent bridge there is no fee i think (  + transaction fees)
+
+{Reactions}
+👍 
+
+[01/23/2024 10:01] 0xprinc
+hey, what is `path` in swapParams for?
+isn't the `tokenIn`, `tokenOut` and `direction` sufficient for the swap ?
+
+
+[01/23/2024 10:03] zdravkohr
+Token in, tick spacing and token out
+
+
+[01/23/2024 10:04] zdravkohr
+Swap Path - Uniswap V3 Development Book https://uniswapv3book.com/milestone_4/path.html
+
+{Embed}
+https://uniswapv3book.com/milestone_4/path.html
+Swap Path - Uniswap V3 Development Book
+A book that teaches how to build a clone of Uniswap V3 in Solidity from scratch.
+
+
+[01/23/2024 10:09] 0xprinc
+oh thanks
+
+
+[01/23/2024 10:15] ihtishamsudo
+@zev2axa created private thread
+
+{Reactions}
+👍 
+
+[01/23/2024 10:55] 0xdemonnn
+please check private thread ser @zev2axa@willkantaros
+
+{Reactions}
+👍 
+
+[01/23/2024 13:12] aamirusmani1552
+Anyone from sponsor available?
+
+
+[01/23/2024 15:20] zev2axa
+whats up?
+
+
+[01/23/2024 15:33] aamirusmani1552
+sent a msg in pvt thread
+
+{Reactions}
+🫡 
+
+[01/23/2024 16:01] slavcheww
+@zev2axa @willkantaros can you check private thread
+
+{Reactions}
+🫡 
+
+[01/23/2024 19:55] rouhsamad
+it was a decent one
+
+{Reactions}
+😂 (9) 👀 
+
+[01/23/2024 19:55] ding0077
+Yea Decent
+
+
+[01/23/2024 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺wardens The **Decent** audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the audit is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a Contest-Admin if you have questions along the way!
+
+
+[01/23/2024 20:39] willkantaros
+thank you all for your comments + participation! 🤝🤝
+
+{Reactions}
+🫡 (12) 
+
+[01/23/2024 21:25] rouhsamad
+How many submissions?
+
+
+[01/23/2024 21:25] slavcheww
+700+
+
+
+[01/24/2024 03:33] haxatron1
+This contest felt like I was on a space mission.
+
+
+[01/24/2024 03:34] haxatron1
+Maybe because the bridge is akin to interdimensional travel
+
+
+[01/24/2024 04:12] 0xdemonnn
+Thanks to @willkantaros@zev2axa for answering my questions during this audit :thankyou:
+
+
+[01/24/2024 05:08] 0xshaheen
+Decent
+
+
+[01/24/2024 06:15] fktworld
+oh
+
+
+[01/24/2024 06:15] fktworld
+Good luck to everyone.
+
+
+[01/24/2024 10:47] taner2344
+I felt lack of documentation
+
+
+[01/24/2024 11:26] beepidibop
+damn, even though the contest was over the weeked
+
+
+[01/24/2024 11:42] haxatron1
+The 1 day extension did not help
+
+
+[01/24/2024 14:17] 0xprinc
+true
+
+
+[01/24/2024 15:19] 0x11singh99
+not true for all😅
+
+{Reactions}
+🔥 (2) 
+
+[01/24/2024 15:26] zdravkohr
+I think he meant extending it led to more submissions 😄
+
+
+[01/26/2024 11:40] rottenwilde
+Guys, I've a specific question for a submission that I made and I need someone that has access to the submissions just to check for something that I'm wondering about. Who can I text to for such a question?
+
+
+[01/26/2024 11:45] zdravkohr
+It is probably not allowed, but it depends on your question
+
+
+[01/26/2024 11:45] zdravkohr
+What is it
+
+
+[01/26/2024 11:57] rottenwilde
+Mostly related with a submission regarding specific case in the logic of one of the contracts, which I covered by a test. But I don't remember If I mentioned that the test use specific params that doesn't fully cover the whole issue which I reported, even it is absolutely valid as scenario. That's my first submission and I don't have a big experience in the platform, that's why I'm just asking
+
+
+[01/26/2024 12:48] mrpotatomagic
+you must've received a mail of your issue when you submitted it so you can check it there
+
+
+[01/26/2024 12:51] rottenwilde
+Oh, yea, I saw it. Thank you!
+
+
+[01/29/2024 16:39] web3panda
+@everyone Wardens, a newbie here. I submitted one finding to the Decent contest. When will the results be announced? Do you get notified if you qualify for a reward? Is 1 finding enough to get any reward, considering it's a Critical one?
+
+
+[01/29/2024 16:40] 0x11singh99
+yes you will get notified here if your finding validated
+
+{Reactions}
+🙏 
+
+[01/29/2024 16:42] web3panda
+@everyone Ahh, got it, thank you! Is there any way to check whether my finding was a duplicate, or I was really the first one to submit it? I already checked the https://github.com/code-423n4/2024-01-decent/blob/main/bot-report.md and https://github.com/code-423n4/2024-01-decent/blob/main/4naly3er-report.md reports.
+
+
+[01/29/2024 17:00] itsmetechjay
+@JanuaryPersimmon2024 please do not tag `@everyone` in your posts, we have lots of folks monitoring these channels and we'll get to them in time.
+
+
+[01/29/2024 17:31] web3panda
+Ahh, ok, got it
+
+
+[02/05/2024 15:00] web3panda
+Has this been already judjed?
+
+
+[02/05/2024 15:42] naina4934
+In progress
+
+{Reactions}
+🙏 (3) thankyou 
+
+[02/07/2024 15:19] lsaudit
+if it's not in bot reports (and not in the known-issues section of the contest) - then it's likely not a duplicate. Moreover, it does not matter if you submitted it first. If someone else found the same issue as you - the reward for this issue will be shared between you and that person.
+
+{Reactions}
+thankyou 
+
+[02/07/2024 15:19] lsaudit
+check docs, it describes how reward calculation looks like
+
+
+[02/07/2024 19:08] haxatron1
+Looks like escalations have ended for this one. Happy I dont need to wait for curves before getting backstage
+
+
+[02/07/2024 19:08] rouhsamad
+When will results be out? Any estimations?
+
+{Reactions}
+🙏 
+
+[02/08/2024 12:01] xyzbtchunt
+Next year
+
+{Reactions}
+😂 
+
+[02/08/2024 12:52] 0xabhay.
+😂
+
+
+[02/08/2024 13:29] haxatron1
+Waiting for this result so that I can get backstage, not expecting much from this (got PTSD from reNFT)
+
+{Reactions}
+😂 (2) ❤️ (2) 
+
+[02/09/2024 21:25] thebrittfactor
+🤑 🎉  Awards for **Decent**:
+
+$3,078.89 USDC » @windhustler 
+$2,615.62 USDC » @EV_om 
+$2,570.95 USDC » NPCsCorp (@0xStalin, @sin1st3r__)
+$2,265.60 USDC » @iamandreiski 
+$1,726.63 USDC » @haxatron 
+$1,234.58 USDC » @nuthan2x 
+$1,134.46 USDC » Soliditors (@0xBeirao, @Tadev, @3docSec)
+$955.54 USDC » @deth 
+$954.05 USDC » @MrPotatoMagic 
+$885.14 USDC » @Aamir 
+$834.34 USDC » @peanuts 
+$806.42 USDC » rouhsamad 
+$726.15 USDC » @monrel 
+$660.44 USDC » @nmirchev8 
+$595.54 USDC » @Topmark 
+$435.67 USDC » @wangxx2026 
+$435.55 USDC » @gesha17 
+$420.09 USDC » @bart1e 
+$415.31 USDC » @NentoR 
+$363.08 USDC » @imare 
+$321.34 USDC » @DadeKuma 
+$303.44 USDC » SBSecurity (@Blckhv, @Slavcheww)
+$249.55 USDC » @c3phas 
+$242.11 USDC » @Fouzantanveer 
+$204.25 USDC » @slvDev 
+$192.08 USDC » @0x11singh99 
+$186.33 USDC » @0xSmartContract 
+$186.24 USDC » @0xepley 
+$186.24 USDC » @SAQ 
+$186.24 USDC » @catellatech 
+$186.24 USDC » @yongskiws 
+$161.77 USDC » @Shaheen 
+$153.95 USDC » @Kaysoft 
+$150.91 USDC » bronze_pickaxe 
+$148.47 USDC » @Tendency 
+$127.99 USDC » @Kow 
+$122.24 USDC » @ZdravkoHr 
+$118.45 USDC » @nobody2018 
+$117.32 USDC » @ether_sky 
+$85.03 USDC » @kutu 
+$78.81 USDC » @auditism 
+$78.69 USDC » @0xJaeger 
+$75.64 USDC » Eeyore 
+$62.25 USDC » @hunter_w3b 
+$52.58 USDC » Inference 
+$46.59 USDC » @0xAadi 
+$43.55 USDC » @cu5t0mpeo 
+$43.52 USDC » @zaevlad
+
+{Reactions}
+❤️ (5) 🔥 (5) 
+
+[02/09/2024 21:26] thebrittfactor
+$38.84 USDC » @Raihan 
+$38.84 USDC » @dharma09 
+$30.10 USDC » @GhK3Ndf 
+$23.41 USDC » @Albahaca 
+$23.41 USDC » clara 
+$23.41 USDC » @foxb868 
+$23.41 USDC » @ihtishamsudo 
+$23.18 USDC » @code-cipher 
+$23.18 USDC » CDSecurity (@ddimitrov22, @chrisdior4)
+$23.18 USDC » @dutra 
+$23.18 USDC » @th13vn 
+$23.07 USDC » @0xDING99YA 
+$23.07 USDC » @antonttc 
+$23.07 USDC » @pkqs90 
+$21.72 USDC » @Timepunk 
+$21.72 USDC » @ptsanev 
+$17.42 USDC » @Matue 
+$17.30 USDC » @0xded093 
+$17.30 USDC » @SovaSlava 
+$12.28 USDC » 0xmystery 
+$12.28 USDC » IceBear 
+$12.28 USDC » Pechenite (@bozho, @radev_sw)
+$12.28 USDC » @rjs 
+$12.28 USDC » @zxriptor 
+$0.12 USDC » @0xBugSlayer 
+$0.12 USDC » @0xSimeon 
+$0.12 USDC » @0xabhay 
+$0.12 USDC » @0xdice91 
+$0.12 USDC » @0xprinc 
+$0.12 USDC » DarkTower (@Gelato_ST, @Kenzo, @0xrex, @Maroutis)
+$0.12 USDC » @geekylumberjack. 
+$0.12 USDC » @Greed 
+$0.12 USDC » Nikki 
+$0.12 USDC » PUSH0 (@thekmj, @jojo)
+$0.12 USDC » @Timeless 
+$0.12 USDC » @Timenov 
+$0.12 USDC » @ZanyBonzy 
+$0.12 USDC » @adeolu 
+$0.12 USDC » al88nsk 
+$0.12 USDC » @azanux 
+$0.12 USDC » @darksnow 
+$0.12 USDC » @ke1caM 
+$0.12 USDC » @mrudenko 
+$0.12 USDC » @ravikiranweb3 
+$0.12 USDC » @seraviz 
+$0.12 USDC » @simplor 
+$0.12 USDC » @slylandro_star 
+$0.12 USDC » @stealth
+
+
+[02/09/2024 21:26] thebrittfactor
+$0.09 USDC » @0xE1 
+$0.09 USDC » @0xPluto 
+$0.09 USDC » @Krace 
+$0.09 USDC » @Tigerfrake 
+$0.09 USDC » @abiih 
+$0.09 USDC » bareli 
+$0.09 USDC » boredpukar 
+$0.09 USDC » @d4r3d3v1l 
+$0.09 USDC » @kodyvim 
+$0.09 USDC » @m4ttm 
+$0.09 USDC » @mgf15 
+$0.09 USDC » @vnavascues 
+$0.06 USDC » @JanuaryPersimmon2024 
+$0.03 USDC » @piyushshukla599 
+
+🏁 Findings summary
+--------------------------------------
+High risk findings: 4 unique (112 total)
+Med risk findings: 5 unique (56 total)
+Gas reports: 6 (Best: c3phas)
+QA reports: 15 (Best: Kaysoft)
+Advanced analysis reports: 13 (Best: fouzantanveer)
+
+Awards will be distributed on Polygon within the next week. Congratulations all!  💸 💸 💸
+
+*Note: If you participated in this audit and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+
+[02/09/2024 21:33] haxatron1
+Dang guys that was unexpected
+
+{Reactions}
+🔥 (3) 
+
+[02/09/2024 21:33] haxatron1
+Super happy
+
+
+[02/09/2024 21:35] haxatron1
+Looks like it was indeed a too many issues diluting the pot problem
+
+
+[02/09/2024 21:35] ev_om
+Congrats @haxatron !! Seems like that PTSD was juust right :chefskiss:
+
+
+[02/09/2024 21:35] haxatron1
+Thanks you too!
+
+
+[02/09/2024 21:35] haxatron1
+Cant wait to get my backstage and see what i missed
+
+
+[02/09/2024 21:37] haxatron1
+It was my 1st month in web3 lol but I cant wait to analyse what went wrong in my other audits (I will probably write up and share too)
+
+{Reactions}
+hi5 
+
+[02/09/2024 21:38] zdravkohr
+I was going to say the same haha
+
+
+[02/09/2024 21:39] blckhv
+you can get your backstage now 😄
+
+{Reactions}
+❤️ 
+
+[02/09/2024 21:39] ev_om
+Dang that's impressive
+
+
+[02/09/2024 21:40] ev_om
+Just had a quick look, looks like you found 3/4 highs and 1 of them was selected for report
+
+{Reactions}
+❤️ (3) 
+
+[02/09/2024 21:41] ev_om
+Way to go! 🚀
+
+
+[02/09/2024 21:41] sin1st3r__
+That 45$ difference 💀 @0xStalin
+
+{Reactions}
+💀 (2) 
+
+[02/09/2024 21:42] sin1st3r__
+Genuinely curious what made that difference lmao
+
+
+[02/09/2024 21:42] sin1st3r__
+Congrats everyone!
+
+
+[02/09/2024 21:50] rouhsamad
+Wow my first high rank 
+Congrats to everyone
+
+
+[02/09/2024 21:54] rouhsamad
+Good job bro, hope this will treat your ptsd 😂
+
+{Reactions}
+❤️ (2) 
+
+[02/09/2024 22:12] oxtenma
+Congratulations @haxatron 🫡
+
+{Reactions}
+❤️ 
+
+[02/09/2024 22:15] rouhsamad
+Also big congrats to @EV_om for being an absolute beast in every single contest 🫡
+
+{Reactions}
+❤️ (2) 
+
+[02/09/2024 23:06] ev_om
+Thanks so much bro! I'm as surprised as you are
+
+{Reactions}
+🫡 
+
+[02/10/2024 00:07] 0xdemonnn
+Congrats everyone 🔥 🔥 🔥
+
+
+[02/10/2024 00:28] 0xstalin
+Congrats everyone, well done :hi5:
+
+
+[02/10/2024 00:50] jes16jupyter
+Is it possible to discuss the finding now, since I submit 1 finding but it is considered as invalid by judges?
+
+
+[02/10/2024 01:30] kaveyjoe
+wait till the report publishing.
+
+
+[02/10/2024 01:53] 0xabhay.
+1 high out of 4H finding and 0.12 bucks lol sheesh!
+
+
+[02/10/2024 05:13] 0xstalin
+at least it helps you to get backstage :chefskiss:
+
+{Reactions}
+👍 (2) chefskiss (3) 
+
+[02/10/2024 08:19] windhustler
+Congrats everyone ✌️
+
+{Reactions}
+🎉 (9) 
+
+[02/10/2024 13:47] web3panda
+@thebrittfactor | C4 How soon will the findings be recorded and visible on the Code4Rena dashboard?
+
+
+[02/10/2024 14:20] rottenwilde
+interesting how draining the UniSwapper contract was not considered as issue 😄
+
+
+[02/11/2024 13:12] seraviz
+same here, but I am thrilled coz I got my first high 🫡 . 👀 Looking to get more soon...👀
+
+
+[02/11/2024 13:13] 0xabhay.
+@seraviz good luck mate 💪
+
+{Reactions}
+🫡 same thankyou 
+
+[02/12/2024 15:20] 0xshaheen
+Awards sent?
+
+
+[02/12/2024 15:25] thebrittfactor
+Keep an eye on #📢announcements for an update 🙂
+
+{Reactions}
+👍 
+
+[02/12/2024 21:36] zxriptor
+Well. I got 12 bucks for B grade QA report while other people got 12 cents for 1 high... That is weird tbh
+
+
+[02/12/2024 21:38] 0x1118641
+must be a lot of dups to only get 12 cents
+
+
+[03/06/2024 14:12] itsmetechjay
+ℹ️ This channel is pending archive.  As a result, any private threads will be permanently deleted on Friday, 15 March 2024. Please make sure to grab anything you might need from those before then.
+
+
+[03/14/2024 14:24] itsmetechjay
+ℹ️ Reminder: this channel will be deleted in 24 hours.
+
+{Reactions}
+🫡 
+
+==============================================================
+Exported 233 message(s)
+==============================================================
